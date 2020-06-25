@@ -1,0 +1,76 @@
+/* body {
+    font-family: poppins;
+}
+
+header .carousel-inner .carousel-item {
+    height: 100vh;
+}
+*/
+
+.nav-custom {
+    border-bottom: 0px;
+    border: 0px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    padding-top: 20px;
+    background-color: transparent !important;
+    border-color: transparent;
+}
+
+.banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.carousel-caption {
+    padding-bottom: 250px;
+    font-family: poppins;
+    text-align: left;
+}
+
+.carousel-caption h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel-caption h3 {
+    color: yellow;
+}
+
+.carousel-caption a {
+    background: #edbb00;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .carousel-caption {
+        padding-bottom: 350px;
+    }
+    .carousel-caption h2 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .carousel-caption {
+        padding-bottom: 120px;
+    }
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+    .carousel-caption a {
+        padding: 10px 25px;
+    }
+}

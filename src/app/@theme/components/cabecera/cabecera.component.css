@@ -1,0 +1,78 @@
+.wrrapNavbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0078d4 !important;
+    transition: .3s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-default {
+    border-bottom: 0px;
+    border: 0px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    padding-top: 20px;
+    height: 100px;
+    background-color: transparent !important;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    margin-left: 0px;
+    font-size: 30px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+    margin-left: 0px !important;
+}
+
+.shrink {
+    background-color: black!important;
+    height: 60px;
+    padding-top: 0;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.shrink .navbar-brand {
+    font-size: 20px;
+}
+
+@media only screen and (max-width:767px) {
+    .navbar-collapse {
+        background: black;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .navbar-default {
+        padding-top: 0px;
+        height: 55px;
+    }
+    .shrink {
+        height: 55px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+    .shrink .navbar-brand {
+        font-size: 30px;
+    }
+}

@@ -1,16 +1,9 @@
-<div class="container">
-
+<app-slider-secundario urlImagen="https://cdn.shopify.com/s/files/1/0145/5613/5478/files/bg-blog.jpg?v=1568084291"></app-slider-secundario>
+<div class="container-fluid container-personalizado">
     <div class="row">
-        <div class="col-md-4">
 
+        <div class="col-md-4" *ngFor="let calzado of calzados;let i=index">
+            <app-calzado [calzado]="calzado" [index]="i"></app-calzado>
         </div>
-        <!-- <div class="col-md-4">
-            <app-calzado></app-calzado>
-        </div>
-        <div class="col-md-4">
-            <app-calzado></app-calzado>
-        </div> -->
     </div>
-
 </div>
-<app-calzado></app-calzado>

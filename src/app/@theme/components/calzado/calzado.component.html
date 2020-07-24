@@ -1,11 +1,51 @@
-<!-- <div class="card card-personalizado">
-    <div class="card-img-container">
-        <img class="card-img-personalizado " src="assets/imagenes/ninos.png" alt="Card image cap">
+<div class="card  mb-5 mt-3">
+    <div>
+        <div class="swiper-container gallery-top card-img-top" [swiper]="galleryTopConfig" #galleryImages="ngxSwiper" (indexChange)="onIndexChange($event)">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" *ngFor="let color of calzado.Colores" [ngStyle]="{ 'background-image': 'url(' + color.TColorArticuloImagen + ')'}">
+                </div>
+            </div>
+
+        </div>
+        <div style="padding-right: 50px; padding-left:50px">
+            <div class="swiper-container gallery-thumbs" [swiper]="galleryThumbsConfig" #galleryThumbs='ngxSwiper' style="position:static">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" *ngFor="let color of calzado.Colores" [ngStyle]="{ 'background-image': 'url(' + color.TColorArticuloImagen + ')'}">
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-black swiper-button-personlalizado" [ngClass]="nextEl"></div>
+                <div class="swiper-button-prev swiper-button-black swiper-button-personlalizado" [ngClass]="prevEl"></div>
+            </div>
+        </div>
     </div>
-    <div class="card-body text-center">
-        <h5>Calzados para niños</h5>
-        <h2>Ver Modelos</h2>
+    <div class="card-body">
+        <div class="producto-info">
+            <div class="row">
+                <div class="col">
+                    <p class="card-text">
+                        {{calzado.Material}}
+                    </p>
+                </div>
+                <div class="col text-right">
+                    <p class="card-text">
+                        <i class="fal fa-heart mr-2"></i>80
+                    </p>
+                </div>
+            </div>
+            <p class="card-text">
+                <span>Tamañossss:</span>
+                <span class="badge badge-pill badge-light" *ngFor="let tamanio of tamanios">{{tamanio}}</span>
+
+            </p>
+            <h6>{{calzado.TParMarcaDescripcion}}</h6>
+            <div class="producto-precio">Bs.{{calzado.PrecioVenta}}</div>
+            <div class="row mt-2">
+                <button type="button" class="btn btn-sm btn-block btn-success"><i class="fab fa-whatsapp mr-2"></i>Consultar</button>
+                <!-- <button type="button" class="btn btn-sm btn-block btn-outline-secondary"><i class="fal fa-heart mr-2"></i> Me gusta</button> -->
+            </div>
+
+        </div>
+
     </div>
-</div> -->
-<!-- Swiper -->
-asdasd
+</div>

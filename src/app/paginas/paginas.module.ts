@@ -6,6 +6,9 @@ import { PaginasRoutingModule } from './paginas-routing.module';
 import { ThemeModule } from '../@theme/theme.module';
 import { RouterModule } from '@angular/router';
 import { DamasComponent } from './damas/damas.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CaballerosComponent } from './caballeros/caballeros.component';
+import { NinosComponent } from './ninos/ninos.component';
 
 
 
@@ -14,12 +17,13 @@ import { DamasComponent } from './damas/damas.component';
 @NgModule({
   declarations: [
     PaginasComponent, 
-    PrincipalComponent, DamasComponent,     
+    PrincipalComponent, DamasComponent, CaballerosComponent, NinosComponent,     
   ],
   imports: [
     CommonModule,RouterModule,
   //   PaginasRoutingModule,
-    ThemeModule
+    ThemeModule,
+    HttpClientModule
   ],
   exports:[
     PaginasComponent, 

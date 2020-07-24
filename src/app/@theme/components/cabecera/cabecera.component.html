@@ -8,13 +8,16 @@
             <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                 <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">DAMAS</a>
+                        <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">VARONES</a>
+                        <a class="nav-link" routerLink="/damas/" routerLinkActive="active">DAMAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">NIÑOS</a>
+                        <a class="nav-link" routerLink="/caballeros/" routerLinkActive="active">CABALLEROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/ninos/" routerLinkActive="active">NIÑOS</a>
                     </li>
                 </ul>
             </div>

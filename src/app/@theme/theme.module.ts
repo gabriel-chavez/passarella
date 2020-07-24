@@ -16,6 +16,18 @@ import { PieComponent } from './components/pie/pie.component';
 import { SliderSecundarioComponent } from './components/slider-secundario/slider-secundario.component';
 import { CalzadoComponent } from './components/calzado/calzado.component';
 
+
+
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { PruebaSliderComponent } from './components/prueba-slider/prueba-slider.component';
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 'auto'
+};
+
+
 @NgModule({
   declarations: [ 
  
@@ -28,12 +40,19 @@ import { CalzadoComponent } from './components/calzado/calzado.component';
     MarcasComponent, 
     PieComponent, 
     SliderSecundarioComponent, 
-    CalzadoComponent],
+    CalzadoComponent, PruebaSliderComponent],
   exports: [ LayoutPrincipalComponent, LayoutSecundarioComponent, CabeceraComponent,SliderSecundarioComponent,CalzadoComponent],
   imports: [
     CommonModule,
     RouterModule,
-   
-  ]
+    SwiperModule
+  ],
+  providers: [
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG
+    }
+  ],
+  
 })
 export class ThemeModule { }

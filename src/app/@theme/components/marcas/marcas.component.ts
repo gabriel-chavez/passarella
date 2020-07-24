@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
 @Component({
   selector: 'app-marcas',
@@ -24,13 +25,16 @@ export class MarcasComponent implements OnInit {
   //   prevButton: '.swiper-button-prev', // Class for prev button
   //   spaceBetween: 30 // Space between each Item
   // };
-  config: any = {
-    pagination: '.swiper-pagination',
-    slidesPerView: 3,
-    slidesPerColumn: 1,
-    paginationClickable: true,
-    spaceBetween: 35,
-    breakpoints: {
+  config: SwiperConfigInterface = {
+   
+    direction: 'horizontal',
+    initialSlide:1,
+    slidesPerView: 9,
+    keyboard: false,
+    mousewheel: false,
+    scrollbar: false,
+    navigation: false,
+    breakpoints:{
       1024: {
         slidesPerView: 9,
         spaceBetween: 15
@@ -42,11 +46,23 @@ export class MarcasComponent implements OnInit {
       640: {
         slidesPerView: 2,
         spaceBetween: 10,
+        initialSlide:1,
       },
       420: {
         slidesPerView: 2,
         spaceBetween: 10,
+        initialSlide:1,
       }
     }
   }
+  // public config: SwiperConfigInterface = {
+  //   a11y: true,
+  //   direction: 'horizontal',
+  //   slidesPerView: 1,
+  //   keyboard: true,
+  //   mousewheel: true,
+  //   scrollbar: false,
+  //   navigation: true,
+  //   pagination: false
+  // };
 }

@@ -76,3 +76,7 @@
         font-size: 30px;
     }
 }
+
+.active {
+    color: #0078d4 !important;
+}

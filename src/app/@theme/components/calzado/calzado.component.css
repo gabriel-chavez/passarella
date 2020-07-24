@@ -1,0 +1,71 @@
+@import '~swiper/dist/css/swiper.min.css';
+.card-body card-body-container {
+    height: 200px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-top {
+    /* height: 100%;
+    ; */
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-button-personlalizado {
+    top: unset;
+    margin-top: -65px;
+}
+
+.gallery-thumbs .swiper-wrapper .swiper-slide {
+    cursor: pointer;
+}
+
+p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+h6 {
+    font-family: "Barlow", sans-serif;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.producto-precio {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #c50215;
+    text-decoration: none;
+}
